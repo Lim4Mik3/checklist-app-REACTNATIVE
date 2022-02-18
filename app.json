@@ -25,7 +25,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.lim4mik3.checklist"
     },
     "web": {
       "favicon": "./assets/images/favicon.png"
