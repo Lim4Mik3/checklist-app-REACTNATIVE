@@ -27,22 +27,24 @@ const ChecklistContext = createContext<ChecklistContextData>({} as ChecklistCont
 
 function ChecklistProvider({ children }: ChecklistProviderProps): JSX.Element {
   const [checklists, setChecklists] = useState<Checklist[]>([]);
-  const [isConnected, setIsConnected] = useState(false);
+  const [isConnected, setIsConnected] = useState(true);
 
   useEffect(() => {
     // checklistService.clearDatabase();
   }, [])
 
   useEffect(() => {
-    if (isConnected) {
-      showMessage({
-        message: 'Conexão estabelecida, sincronizando dados...',
-        type: 'success'
-      })
-      checklistService.syncData();
-      queryChecklist();
-      return;
-    }
+    (async () => {
+      if (isConnected) {
+        showMessage({
+          message: 'Conexão estabelecida, sincronizando dados...',
+          type: 'success'
+        })
+        await checklistService.syncData();
+        queryChecklist();
+        return;
+      }
+    })()
   }, [isConnected])
 
   const editChecklist = async (data: EditChecklistObject) => {

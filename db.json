@@ -1,23 +1,23 @@
 {
   "checklists": [
     {
-      "id": "1",
-      "type": "BPA",
-      "amount_of_milk_produced": "300",
-      "number_of_cows_head": "17",
-      "had_supervision": true,
+      "id": "dd32997c-4cdc-4070-8ebf-5cf3fd5934a8",
       "farmer": {
-        "name": "Fazenda São Rock",
-        "city": "São Rock"
+        "name": "Recanto do Sol Radiante",
+        "city": "Mogi das Cruzes"
       },
       "from": {
-        "name": "Luciano Camargo"
+        "name": "Carlos Augusto"
       },
       "to": {
-        "name": "Fernando Siqueira"
+        "name": "Rafael Silva"
       },
-      "created_at": "2022-02-01T10:10:21.748Z",
-      "updated_at": "2022-02-01T10:10:21.748Z"
+      "type": "Antibiótico",
+      "amount_of_milk_produced": "50",
+      "number_of_cows_head": "100",
+      "had_supervision": false,
+      "created_at": "2022-02-19T20:25:01.279Z",
+      "updated_at": "2022-02-19T20:25:30.645Z"
     }
   ]
 }

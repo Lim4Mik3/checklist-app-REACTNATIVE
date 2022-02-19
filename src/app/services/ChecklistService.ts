@@ -107,7 +107,6 @@ export default class ChecklistService {
         })
       }
     } catch (error) {
-      console.log(error);
       throw new AppError("Erro ao sincronizar os dados");
     }
   }
