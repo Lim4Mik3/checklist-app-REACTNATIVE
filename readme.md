@@ -18,7 +18,7 @@ Projeto desenvolvido como desafio para desenvolvedor React Native.
 
 <b>Printscreen Home page - Listagem de checklists</b>
 
-![](/images/1.PNG)
+![](/images/1.png)
 
  <br />
  <br />
@@ -86,5 +86,7 @@ A aplicação deve funcionar em qualquer tipo de situação de conexão, seja es
 ## Todas as fotos da aplicação estão na pasta /images deste repositório, acessem.
 
 <b>Criação de checklist</b>
-![](/images/5.PNG)
+
+![](/images/5.png)
+
 <br />
