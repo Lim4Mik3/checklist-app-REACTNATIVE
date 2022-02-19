@@ -7,7 +7,7 @@
 # FarmCheckList todo o controle na palma da mão.
 
 <p>
-  Aplicação com features Offline Fisrt para controle de checklists de fazendeiros e profissionais rurais aonde o sinal constante com a internet não pode ser garantido.
+  Aplicação com features Offline Fisrt para controle de checklists de fazendeiros e profissionais rurais onde o sinal constante com a internet não pode ser garantido.
 </p>
 
 <br />
