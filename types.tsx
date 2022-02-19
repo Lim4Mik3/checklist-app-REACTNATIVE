@@ -3,9 +3,9 @@
  * https://reactnavigation.org/docs/typescript/
  */
 
-import { BottomTabScreenProps } from '@react-navigation/bottom-tabs';
-import { CompositeScreenProps, NavigatorScreenParams } from '@react-navigation/native';
+import { CompositeScreenProps, NavigatorScreenParams, ParamListBase } from '@react-navigation/native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
+import { Checklist } from './src/app/services/dtos/Checklist.dtos';
 
 declare global {
   namespace ReactNavigation {
@@ -14,9 +14,10 @@ declare global {
 }
 
 export type RootStackParamList = {
-  Root: NavigatorScreenParams<RootTabParamList> | undefined;
-  Modal: undefined;
-  NotFound: undefined;
+  'checklist/List': undefined;
+  'checklist/Create': undefined;
+  'checklist/Update': DetailsPageParams;
+  'checklist/Details': DetailsPageParams;
 };
 
 export type RootStackScreenProps<Screen extends keyof RootStackParamList> = NativeStackScreenProps<
@@ -24,12 +25,6 @@ export type RootStackScreenProps<Screen extends keyof RootStackParamList> = Nati
   Screen
 >;
 
-export type RootTabParamList = {
-  TabOne: undefined;
-  TabTwo: undefined;
-};
-
-export type RootTabScreenProps<Screen extends keyof RootTabParamList> = CompositeScreenProps<
-  BottomTabScreenProps<RootTabParamList, Screen>,
-  NativeStackScreenProps<RootStackParamList>
->;
+interface DetailsPageParams {
+  data: Checklist;
+}
